@@ -45,7 +45,17 @@ There are two recurring themes in these patterns. First, they all encapsulate kn
 Content is in progress
 
 ## Structural
-Content is in progress
+### Adapter Pattern
+There are situations where we need to merge two incompatible interfaces. Adapter design pattern combines
+the functionality of independent interfaces.
+For example, Consider a text file processor that process only `.txt` files, and there are other processors that process `.csv` and `.json`. 
+Text file processor implements text file processing interface and CSV and JSON file processor implements other file processor interface.
+The task is to combine both functionality in on class.
+
+[TextFileProcessor Interface](./src/com/dp/structural/adapter/TextFileProcessor.java)\
+[OtherFileProcessor Interface](./src/com/dp/structural/adapter/OtherFileProcessor.java)\
+[AdapterMain](./src/com/dp/structural/adapter/AdapterMain.java)
+
 
 #### Reference
 * **Design Patterns**, *Elements of Reusable Object-Oriented Software* by *Erich Gamma*, *Richard Helm*, *Ralph Johnson*, *John Vlissides*.
